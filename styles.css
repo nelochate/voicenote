@@ -1,0 +1,151 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to top, #a5a3a7, #6c6b6d, #4f4f50);
+    color: #333; 
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+    background: #ffffff; 
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0; 
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333; 
+}
+
+.page-description {
+    font-size: 1.1rem;
+    margin: 0 auto 40px;
+    color: #666; 
+}
+
+.no-browser-support {
+    display: none;
+    font-size: 1.2rem;
+    color: #ff6b6b; 
+    margin-top: 35px;
+}
+
+.app {
+    margin: 40px auto;
+}
+
+#note-textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0; 
+    background: #f9f9f9; 
+    color: #333; 
+    font-size: 1rem;
+    resize: none;
+}
+
+#note-textarea::placeholder {
+    color: #999; 
+}
+
+/* Container for the buttons */
+.button-container {
+    display: flex; 
+    justify-content: center; 
+    gap: 10px; 
+    margin: 20px 0; 
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #333; 
+    color: #fff; 
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; 
+}
+
+button:hover {
+    background: #555; 
+}
+
+button i {
+    font-size: 1.2rem; 
+}
+
+button i {
+    font-size: 1.2rem;
+}
+
+#recording-instructions {
+    margin: 15px auto 60px;
+    color: #666; 
+}
+
+#notes {
+    padding-top: 20px;
+    margin-top: 30px;
+    border-top: 1px solid #e0e0e0; 
+}
+
+.note {
+    background: #f9f9f9; 
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0; 
+}
+
+.note .header {
+    font-size: 0.9em;
+    color: #666; 
+    margin-bottom: 10px;
+}
+
+.note .content {
+    margin-bottom: 10px;
+    color: #333; 
+}
+
+.note .delete-note,
+.note .listen-note {
+    text-decoration: none;
+    margin-left: 15px;
+    color: #666; 
+    cursor: pointer;
+}
+
+.note .delete-note:hover,
+.note .listen-note:hover {
+    color: #333; 
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 25px;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
