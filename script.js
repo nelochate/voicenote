@@ -78,11 +78,9 @@ $('#start-record-btn').on('click', function (e) {
 $('#pause-record-btn').on('click', function (e) {
   recognition.stop();
   instructions.text('Voice recognition paused.');
-});
 
-// Sync the text inside the text area with the noteContent variable.
-noteTextarea.on('input', function () {
-  noteContent = $(this).val();
+  // Force a layout reflow to prevent shrinking
+  void document.body.offsetHeight;
 });
 
 $('#save-note-btn').on('click', function (e) {
